@@ -18,7 +18,7 @@
             extend: {
               colors: {
                 button_1: 'rgb(171, 239, 95)',
-                background_1: '#F4F4F4',
+                button_2: 'rgba(171, 239, 95, 0.5)',
               }
             }
           }
@@ -44,10 +44,11 @@
   </head>
   <body class="manrope-font">
     <!-- navbar and banner sections -->
-    <header class="container mx-auto mt-6 bg-gradient-to-t from-orange-100 to-slate-50">
-      <!-- <i class="fa-solid fa-arrow-right"></i> -->
+    <header class="bg-gradient-to-b from-orange-100 to-slate-50">
+        <div class="container mx-auto pt-6">
+                    <!-- navbar section -->
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar">
           <div class="navbar-start">
             <i class="fa-solid fa-arrow-right -rotate-45 bg-button_1 rounded-full p-1"></i>
             <a class="btn btn-ghost text-3xl font-bold">Rinterio</a>
@@ -83,6 +84,16 @@
           </div>
         </div>
       </nav>
+      <!-- Banner section -->
+       <section class="text-center space-y-4">
+        <img class="lg:w-5/12 px-4 mx-auto" src="./assets/banner.png" alt="">
+        <h1 class="text-3xl lg:text-7xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+        <p class="text-gray-600  font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+        <div class="py-6">
+            <a class="px-4 py-2 bg-button_2 rounded-3xl text-xl font-medium items-center">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-button_1 text-white rounded-full p-1"></i></a>
+        </div>
+       </section>
+        </div>
     </header>
     <main></main>
     <!-- footer section -->
