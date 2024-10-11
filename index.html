@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,19 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize configuration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                button_1: 'rgb(171, 239, 95)',
+                background_1: '#F4F4F4',
+              }
+            }
+          }
+        }
+      </script>
     <!-- font-awesome setup -->
     <script
       src="https://kit.fontawesome.com/fd214fcb10.js"
@@ -29,5 +42,50 @@
       }
     </style>
   </head>
-  <body class="manrope-font"></body>
+  <body class="manrope-font">
+    <!-- navbar and banner sections -->
+    <header class="container mx-auto mt-6 bg-gradient-to-t from-orange-100 to-slate-50">
+      <!-- <i class="fa-solid fa-arrow-right"></i> -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-button_1 rounded-full p-1"></i>
+            <a class="btn btn-ghost text-3xl font-bold">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-medium"><a>Home</a></li>
+              <li class="text-gray-500"><a>Services</a></li class="text-gray-500">
+              <li class="text-gray-500"><a>Portfolio</a></li class="text-gray-500">
+              <li class="text-gray-500"><a>Blogs</a></li class="text-gray-500">
+              <li class="text-gray-500"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-6">
+            <a class="bg-white rounded-full hidden md:inline p-2"><i class="fa-solid fa-magnifying-glass text-2xl"></i></a>
+            <a class="bg-white rounded-full hidden md:inline p-2"><i class="fa-solid fa-cart-shopping text-2xl"></i></a>
+            <a class="px-4 py-2 bg-button_1 rounded-3xl hidden md:inline text-xl font-medium items-center">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-1"></i></a>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <!-- footer section -->
+    <footer></footer>
+  </body>
 </html>
